@@ -1,0 +1,323 @@
+/* Defaults CSS */
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+body,p,a,h1,h2,h3,h4,h5,h6,span,button{
+    font-family: 'Poppins', sans-serif;
+}
+/* Defaults CSS */
+
+/* Header Css Start */
+.top-header {
+    background-color: #000000;
+    height: 82px;
+}
+.container {
+    max-width: 1300px;
+}
+a.navbar-brand img {
+    width: 125px;
+}
+form.header-form {
+    border: none;
+    height: 2.75rem;
+    align-items: center;
+}
+input.form-input {
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+button.form-btn {
+    border: none;
+    background: transparent;
+    color: #f07f23;
+    font-size: 25px;
+    height: 2.75rem;
+    padding: 0;
+}
+.icon {
+    margin-right: 10px;
+}
+.icon img {
+    width: 27px;
+    height: auto;
+}
+.menu-text p:nth-child(2) {
+    font-size: 13px;
+}
+.menu-text p {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+    margin: 0;
+}
+a.nav-link,.dropdown-item {
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+}
+.nav-link:focus, .nav-link:hover {
+    color: #f17e23;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+a.dropdown-item {
+    font-weight: 400;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #fff;
+    background-color: #f17e23;
+}
+.dropdown-item.active, .dropdown-item:active {
+    text-decoration: none;
+    color: #fff;
+    background-color: #f17e23;
+}
+nav.navbar {
+    box-shadow: 0 4px 3px rgba(0,0,0,.07);
+}
+.dropdown-menu{
+    display: block;
+    top: 110%;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+.dropdown:hover>.dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    top: 85%;
+}
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
+/* Header Css End */
+
+/* Banner CSS Start */
+section.banner .col-xl-8{
+    width: 68.8%;
+}
+section.banner .col-xl-4{
+    width: 31.2%;
+}
+.sm-banner-wrap {
+    text-align: right;
+}
+.content-control .carousel-control-next-icon, .content-control .carousel-control-prev-icon {
+    background: #ccc;
+    border-radius: 5px;
+    color: #000;
+}
+.content-control .carousel-control-next-icon, .content-control .carousel-control-prev-icon {
+    line-height: 2rem;
+    font-size: 20px;
+    border-radius: 50%!important;
+}
+.content-control .carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 6px;
+    border: 0!important;
+}
+.content-control .carousel-indicators .active {
+    background: #f17e23;
+}
+/* Banner CSS End */
+
+/* Product Slider Start */
+h2.slider-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.card {
+    margin: 10px 0;
+    border: 0;
+    transition: .5s;
+    padding-top: 25px!important;
+    padding: 15px 5px;
+    border-radius: 1rem;
+}
+.card:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,.15);
+}
+.card.product-item img {
+    width: 145px;
+    height: 145px;
+    margin: auto;
+}
+.badge.bg-secondary {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 3px 3px 0px 3px;
+    background: #f17e23!important;
+    font-weight: 400;
+}
+.card-body {
+    height: 165px;
+    text-align: center;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.product-item p.card-text {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 25px;
+}
+.product-item p.card-text del {
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+.product-item p.card-text:nth-child(2) {
+    font-size: 15px;
+}
+.btn-wrap a {
+    padding: 5px 8px;
+    font-size: 12px;
+    background: #f17e23;
+    border-color: #f17e23;
+    width: 90px;
+    height: 30px;
+}
+.btn-wrap a:hover {
+    background: #f17e23;
+    border-color: #f17e23;
+}
+.btn-wrap a.btn.btn-outline-primary {
+    background: transparent!important;
+    color: #f17e23;
+}
+@media screen and (max-width:575px) {
+    .xs-col{
+        width: 50%!important;
+    }
+}
+/* Product Slider End */
+
+/* Category Start */
+p.cate-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.category-wraper {
+    text-align: center;
+    background: #f6f8fa;
+    padding: 1.5rem 5px;
+    height: 170px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.category-wraper img {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    filter: grayscale(1);
+    transition: .5s;
+}
+.category-wraper:hover img{
+    filter: grayscale(0);
+}
+.category-wraper p {
+    margin: 12px 0;
+    font-size: 15px;
+}
+/* Category End */
+
+/* Product Tab Start */
+.nav-underline .nav-link {
+    color: #000000;
+}
+.nav-underline .nav-link:hover {
+    color: #f07f23;
+    border-color: transparent;
+    
+}
+.nav-underline .nav-link.active{
+    font-weight: 400;
+    border-color: #f07f23;
+}
+/* Product Tab End */
+
+/* Footer main Start */
+.main-footer{
+    background-color: #202020;
+}
+p.f-title {
+    font-size: 15px;
+    color: #F17E23;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+ul.f-menu li a {
+    font-size: 13px;
+    color: #fff;
+}
+.footer-bottom{
+    background-color: #000000;
+}
+.contact {
+    width: 275px;
+    height: 71px;
+    padding: 15px 20px;
+    border: 1px solid #fff;
+    border-radius: 9999px;
+    margin-bottom: 20px;
+    transition: .5s;
+}
+.contact:hover{
+    border-color: #f07f23;
+}
+.contact i{
+    font-size: 24px;
+    color: #fff;
+}
+span.line {
+    width: 1px;
+    background: #fff;
+    margin: 0 20px;
+}
+.tracking-wider {
+    font-size: 20px;
+    color: #fff;
+}
+ul.social li a {
+    width: 40px;
+    height: 40px;
+    background: #505050;
+    display: inline-block;
+    line-height: 40px;
+    font-size: 30px;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: #202020;
+}
+.f-mail p {
+    color: #fff;
+    margin-right: 5px;
+}
+.f-mail a {
+    color: #f07f23!important;
+}
+/* Footer main End */
+
